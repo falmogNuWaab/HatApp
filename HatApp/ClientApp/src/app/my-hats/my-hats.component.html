@@ -1,0 +1,84 @@
+
+
+
+<h1 style="color: white" >Hello {{currentUser.firstName}}</h1>
+<ul class="pickHatDivs">
+<li>
+<div id="HatOfTheDay" >
+  <h3 class="titleH3">Wear this Hat</h3>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="{{currentUser.hatOfTheDay.images}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{currentUser.hatOfTheDay.type | titlecase}} - {{currentUser.hatOfTheDay.material | titlecase}} </h2>
+        <div class="color">
+            <h3>Color: {{currentUser.hatOfTheDay.color | titlecase}}</h3>
+        </div>
+        <div class="size">
+            <h3>Did you know? <br/>
+            {{currentUser.hatOfTheDay.facts}}</h3>
+
+        <div><a href="#"  (click)="RemoveFromCollection(currentUser.hatOfTheDay.id)">Remove from my Collection</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</li>
+<li>
+<h3 class="titleH3">Pick one from the Collection</h3>
+<div id="pickAHat">
+<div *ngFor="let notAll of allHats">
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="{{notAll.images}}">
+      </div>
+      <div class="contentBx">
+        <h2>{{notAll.type | titlecase}} - {{notAll.material | titlecase}} </h2>
+        <div class="color">
+            <h3>Color: {{notAll.color | titlecase}}</h3>
+        </div>
+        <div class="size">
+            <h3>Did you know? <br/>
+            {{notAll.facts}}</h3>
+        </div>            
+        <div><button>Wear It</button></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</li>
+</ul>
+<div id="recentlyWorn">
+<h3 class="titleH3">Recently Worn </h3>
+
+<div class = 'cardDeck'>
+    <div *ngFor="let hat of currentUser.worn30">
+        <div class="container">
+            <div class="card">
+              <div class="imgBx">
+                <img src="{{hat.images}}">
+              </div>
+              <div class="contentBx">
+                <h2>{{hat.type | titlecase}} - {{hat.material | titlecase}} </h2>
+                <div class="color">
+                    <h3>Color: {{hat.color | titlecase}}</h3>
+                </div>
+                <div class="size">
+                    <h3>Did you know? <br/>
+                    {{hat.facts}}</h3>
+                </div>            
+                <div><a href="#" (click)="RemoveFromCollection(hat.id)">Remove from my Collection</a></div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+
+

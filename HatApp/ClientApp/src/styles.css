@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url(https://media.gq.com/photos/5a04f9a398002d2e253679f5/master/pass/fall-hats-gq-style-0816-01-1.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+ 
+  
+}
+body::-webkit-scrollbar {
+  width: 25px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: whitesmoke;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color:rgb(1, 61, 72);    /* color of the scroll thumb */
+   border-radius: 10%;       /* roundness of the scroll thumb */
+  /*border: 5px solid whitesmoke;  /* creates padding around scroll thumb */
+}

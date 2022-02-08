@@ -1,0 +1,69 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']"><img src="/hem.png" style="height: 35px;"/><span style="display: none;">Hemory's</span><span style="color: whitesmoke;">HatSpace</span></a>
+   
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+      <div clas="navbarStyle">
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <!--<a class="nav-link text-dark" [routerLink]="['/']">Home</a>-->
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/ShowHats']"
+              >
+              <span style="color: whitesmoke;">The Collection</span>
+              </a
+            >
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/ShowUsers']"
+              >
+              <span style="color: whitesmoke;">Profiles</span>
+              </a
+            >
+          </li>
+          <!--<li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/CreateUser']"
+              >
+              <span style="color: whitesmoke;">Create Profile</span>
+              </a
+            >
+          </li> -->
+          <!--<li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/MyHats']"
+              >My Hats</a
+            >
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/CreateHat']"
+              >Create Hat</a
+            >
+          </li> -->
+        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

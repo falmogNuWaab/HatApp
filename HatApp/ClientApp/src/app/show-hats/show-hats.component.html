@@ -1,0 +1,25 @@
+<div class="cardDeck">
+<div *ngFor="let hat of allHats">
+    <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="{{hat.images}}">
+          </div>
+          <div class="contentBx">
+            <h2>{{hat.type | titlecase}} - {{hat.material | titlecase}} </h2>
+            <div class="color">
+                <h3>Color: {{hat.color | titlecase}}</h3>
+            </div>
+            <div class="size">
+                <h3>Did you know? <br/>
+                {{hat.facts}}</h3>
+            </div>            
+
+            <a href="#">Wear It</a><a href="#">Remove from My Collection</a>
+
+          </div>
+        </div>
+      </div>
+     
+</div>
+</div>
