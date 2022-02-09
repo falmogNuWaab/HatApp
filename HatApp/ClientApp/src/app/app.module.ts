@@ -37,7 +37,7 @@ import { UserService } from './user.service';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: ShowUsersComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'ShowHats', component: ShowHatsComponent },
       { path: 'CreateHat', component: CreateHatComponent },
       { path: 'ShowUsers', component: ShowUsersComponent},
