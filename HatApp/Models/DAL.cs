@@ -53,6 +53,10 @@ namespace HatApp
         public Users GetUserByID(int id)
         {
             int recommendId = GenerateRandomID();
+            if (recommendId > 1)
+            {
+                recommendId = GenerateRandomID();
+            }
             string rsql = $"select * from hats where id={recommendId}";
             string usql = $"select * from users where id={id}";
             string mhsql = $"select * from myhats where userid={id}";
@@ -285,9 +289,9 @@ namespace HatApp
 
         }
 
-        public void CreateMonthlyHat(int u, int h, string d)
+        public void CreateMonthlyHat(MonthlyHats mh)
         {
-            string sql = $"insert into monthlyhats values (0,{u},{h},'{d}')";
+            string sql = $"insert into monthlyhats values (0,{mh.UserId},{mh.HatId},'{mh.LastWornDate}')";
 
             using (var connect = new MySqlConnection(Secret.Connection))
             {
