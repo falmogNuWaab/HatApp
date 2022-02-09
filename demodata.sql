@@ -1,5 +1,5 @@
 insert into hats values
-(0,'baseball cap','canvas','tan gucci print','./images/Baseball(2).png','The first team to wear a baseball cap Brooklyn Excelsiors in 1860'),
+(0,'baseball cap','canvas','tan gucci print','./images/Baseball (2).png','The first team to wear a baseball cap Brooklyn Excelsiors in 1860'),
 (0,'beanie','cotton','gray','./images/Beanie.png','In Fargo, North Dakota, people aren’t allowed to wear beanies, or hats of any kind, while dancing'),
 (0,'beret','felt','black','./images/Beret.png','The Beret has it’s own Museum in Navy, Fance '),
 (0,'bowler','felt','brown','./images/Bowler.png','The purpose of the design was to protect gamekeepers from hitting their heads on low hanging branches while riding on horses. '),
@@ -15,7 +15,7 @@ insert into hats values
 (0,'fedora','felt','black','./images/fedora3.png','Before Prince Edward of Wales kickstarted the fedora’s popularity among men, the fedora was originally a woman’s hat. '),
 (0,'fedora','felt','camel','./images/fedora4.png','Before Prince Edward of Wales kickstarted the fedora’s popularity among men, the fedora was originally a woman’s hat. '),
 (0,'beanie','cotton','gray gucci print','./images/gucciBeanie.png','In Fargo, North Dakota, people aren’t allowed to wear beanies, or hats of any kind, while dancing'),
-(0,'trucker','canvas/polyester','tan gucci print with cat','./images/gucciTrucker.png','Originally, the trucker hat was a mere token given away by companies to farmers, rural workers, and truckers in the United States.'),
+(0,'trucker','canvas/polyester','tan gucci print with cat','./images/gucciTrucker.jpg','Originally, the trucker hat was a mere token given away by companies to farmers, rural workers, and truckers in the United States.'),
 (0,'bucket','canvas','tan Gucci print','./images/guicciBucket.png','Bulgarians refer to bucket hats as "idiotka", which means idiot hats'),
 (0,'homburg','felt','smoke gray','./images/Homburg.png','The homburg became popular in Europe after England\'s King Edward VII visited Germany and returned with a hat of this style '),
 (0,'beanie','wool','tan cable knit northface','./images/northfaceBeanie.png','In Fargo, North Dakota, people aren’t allowed to wear beanies, or hats of any kind, while dancing'),
