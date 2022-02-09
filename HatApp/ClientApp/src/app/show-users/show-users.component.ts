@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import{Convert, User} from '../User';
 import { UserService } from '../user.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import swal from 'sweetalert';
 
 @Component({
   selector: 'app-show-users',
