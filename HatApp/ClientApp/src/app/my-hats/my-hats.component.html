@@ -1,7 +1,4 @@
-
-
-
-<h1 style="color: white" >Hello {{currentUser.firstName}}</h1>
+<h1 id="user" name="user" style="color: white" >Hello {{currentUser.firstName}}</h1>
 <ul class="pickHatDivs">
 <li>
 <div id="HatOfTheDay" >
@@ -20,7 +17,7 @@
             <h3>Did you know? <br/>
             {{currentUser.hatOfTheDay.facts}}</h3>
 
-        <div><a href="#"  (click)="RemoveFromCollection(currentUser.hatOfTheDay.id)">Remove from my Collection</a></div>
+        <div><a href="{{url}}" (click)="WearHat(currentUser.hatOfTheDay.id)">Wear this Hat</a></div>
       </div>
     </div>
   </div>
@@ -45,7 +42,7 @@
             <h3>Did you know? <br/>
             {{notAll.facts}}</h3>
         </div>            
-        <div><button>Wear It</button></div>
+        <div><a href="{{url}}" (click)="WearHat(currentUser.hatOfTheDay.id)">Wear this Hat</a></div>
       </div>
     </div>
   </div>
@@ -72,10 +69,11 @@
                     <h3>Did you know? <br/>
                     {{hat.facts}}</h3>
                 </div>            
-                <div><a href="#" (click)="RemoveFromCollection(hat.id)">Remove from my Collection</a></div>
+                <div><a href="{{url}}" (click)="WearHat(currentUser.hatOfTheDay.id)">Wear this Hat</a></div>
               </div>
             </div>
           </div>
+          <br/>
     </div>
 </div>
 
