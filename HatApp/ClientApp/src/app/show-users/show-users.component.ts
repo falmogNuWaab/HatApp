@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import{Convert, User} from '../User';
 import { UserService } from '../user.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-show-users',
@@ -9,8 +11,10 @@ import { UserService } from '../user.service';
   providers: [UserService]
 })
 export class ShowUsersComponent implements OnInit {
-  currentUser?: User [] = [];
-  constructor(private userDAL: UserService) { }
+  currentUser?: User[] = [];
+  url: string = './ShowUsers/MyHats/';
+
+  constructor(private userDAL: UserService, private go: Router) { }
 
   ngOnInit() {
     this.userDAL.GetAllUsers().subscribe(
@@ -20,6 +24,17 @@ export class ShowUsersComponent implements OnInit {
         console.log(this.currentUser);
       }
     );
+  }
+
+  Login(id: number) {
+    
+    var Username = prompt("Enter Username");
+    var Password = prompt("Enter Password");
+
+    if(Username == "ab" && Password == "ab" ){
+      this.url= this.url + id;
+      this.go.navigate([this.url])
+    }
   }
 
 }

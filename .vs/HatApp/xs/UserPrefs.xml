@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{4EEAB140-92F0-40C1-991C-F4671A21B954}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HatApp/Models/DAL.cs">
+    <Files>
+      <File FileName="HatApp/ClientApp/src/app/show-users/show-users.component.html" Line="23" Column="1" />
+      <File FileName="HatApp/ClientApp/src/app/show-users/show-users.component.ts" Line="15" Column="37" />
+      <File FileName="HatApp/Models/DAL.cs" Line="71" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HatApp" expanded="True">
+            <Node name="HatApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="ClientApp" expanded="True">
+                <Node name="src" expanded="True">
+                  <Node name="app" expanded="True">
+                    <Node name="show-users" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="DAL.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.HatApp PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/RLynch/Library/Caches/VisualStudio/8.0/Symbols/mysql-net/MySqlConnector/c22dd56c4d286a0f0b7e7f296b5f595c20992a6a</String>
+  </Debugger.DebugSourceFolders>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

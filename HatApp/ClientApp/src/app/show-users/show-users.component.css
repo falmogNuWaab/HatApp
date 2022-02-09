@@ -193,6 +193,7 @@ body{
   transform: translateY(50px);
   transition: 0.5s;
   margin-top: 0;
+  cursor: pointer;
 }
 
 .container .card:hover .contentBx a{
@@ -201,3 +202,4 @@ body{
   transition-delay: 0.75s;
   
 }
+
