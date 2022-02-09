@@ -53,9 +53,9 @@ namespace HatApp
         public Users GetUserByID(int id)
         {
             int recommendId = GenerateRandomID();
-            if (recommendId > 1)
+            if (recommendId == 0)
             {
-                recommendId = GenerateRandomID();
+                recommendId = 1;
             }
             string rsql = $"select * from hats where id={recommendId}";
             string usql = $"select * from users where id={id}";
