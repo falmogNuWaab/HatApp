@@ -1,22 +1,36 @@
-h1{
+/*h1{
 background-color: rgba(7, 79, 86, 0.739);
 color: whitesmoke;
 text-align: center;
 max-width: fit-content;
-left: 33%;
-position: relative;
+top:33%;
+left: 45%;
+position: fixed;
 border: solid;
 border-radius: 25%;
-}
+}*/
 
-h4{
+#headerDiv{
+background-color: rgba(7, 79, 86, 0.739);
+color: whitesmoke;
+text-align: center;
+max-width: fit-content;
+top:33%;
+left: 39%;
+position: fixed;
+border: groove;
+border-radius: 25%;
+padding: 10px;
+}
+/*h4{
 background-color: rgba(7, 79, 86, 0.739);
 color: whitesmoke; 
 text-align:center; 
 font-size: 18px;
 max-width: fit-content;
-left: 50%;
-position: relative;
+left: 48%;
+position: fixed;
+top:39%;
 border: solid;
 border-radius: 25%;
-}
+}*/
