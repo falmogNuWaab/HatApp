@@ -35,17 +35,17 @@ export class ShowUsersComponent implements OnInit {
     confirmButtonText: 'Sign in',
     focusConfirm: false,
     preConfirm: () => {
-      const login = Swal.getPopup().querySelector('#login').value
-      const password = Swal.getPopup().querySelector('#password').value
+      const login = Swal.getPopup().querySelector('#login').value;
+      const password = Swal.getPopup().querySelector('#password').value;
       if (!login || !password) {
-        Swal.showValidationMessage(`Please enter login and password`)
+        Swal.showValidationMessage(`Please enter login and password`);
       }
       return { login: login, password: password }
     }
   }).then((result) => {
       if(result.value.login == u && result.value.password == p){
         this.url= this.url + id;
-        this.go.navigate([this.url])
+        this.go.navigate([this.url]);
 
       }
 
