@@ -41,6 +41,5 @@ insert into users values(0,"Hemory","Phifer"),
 (0,"Ramone","Lynch"),
 (0,"James","Mitchell");
 
-insert into myhats values(0,1,12),(0,1,2),(0,1,25),(0,2,22),(0,2,35),(0,3,26),(0,3,27),(0,3,23),(0,4,24);
 
 insert into monthlyhats values(0,1,12,'02-01-2022'),(0,2,22,'02-02-2022');
