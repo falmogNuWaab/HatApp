@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{4EEAB140-92F0-40C1-991C-F4671A21B954}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HatApp/ClientApp/src/app/show-users/show-users.component.ts">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HatApp/ClientApp/src/app/my-hats/my-hats.component.html">
     <Files>
       <File FileName="HatApp/ClientApp/src/app/show-users/show-users.component.html" Line="22" Column="7" />
       <File FileName="HatApp/ClientApp/src/app/show-users/show-users.component.ts" Line="4" Column="58" />
       <File FileName="HatApp/Models/DAL.cs" />
+      <File FileName="HatApp/ClientApp/src/app/my-hats/my-hats.component.html" Line="66" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,8 +15,8 @@
               <Node name="ClientApp" expanded="True">
                 <Node name="src" expanded="True">
                   <Node name="app" expanded="True">
-                    <Node name="show-users" expanded="True">
-                      <Node name="show-users.component.ts" selected="True" />
+                    <Node name="my-hats" expanded="True">
+                      <Node name="my-hats.component.html" selected="True" />
                     </Node>
                   </Node>
                 </Node>
