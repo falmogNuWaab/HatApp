@@ -4,7 +4,7 @@ import { UserService } from '../user.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
-@Component({
+@Component({  
   selector: 'app-show-users',
   templateUrl: './show-users.component.html',
   styleUrls: ['./show-users.component.css'],
@@ -28,25 +28,24 @@ export class ShowUsersComponent implements OnInit {
 
   Login(id: number, u: string, p: string){
   Swal.fire({
-    title: 'Login',
+    title: 'Login Form',
     icon: 'info', 
     html: `<input type="text" id="login" class="swal2-input" placeholder="Username">
     <input type="password" id="password" class="swal2-input" placeholder="Password">`,
     confirmButtonText: 'Sign in',
     focusConfirm: false,
     preConfirm: () => {
-      const login = Swal.getPopup().querySelector('#login').value
-      const password = Swal.getPopup().querySelector('#password').value
+      const login = (<HTMLInputElement>Swal.getPopup().querySelector('#login')).value;
+      const password = (<HTMLInputElement>Swal.getPopup().querySelector('#password')).value;
       if (!login || !password) {
-        Swal.showValidationMessage(`Please enter login and password`)
+        Swal.showValidationMessage(`Please enter login and password`);
       }
       return { login: login, password: password }
     }
   }).then((result) => {
       if(result.value.login == u && result.value.password == p){
         this.url= this.url + id;
-        this.go.navigate([this.url])
-
+        this.go.navigate([this.url]);
       }
 
   })
